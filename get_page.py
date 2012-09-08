@@ -9,7 +9,8 @@ def get_page(url):
 	
 
 def main():
-	print 'hello world!!'
+	# print 'hello world!!'
+	# removing junk....
 	url = raw_input("enter the url")
 	content =  get_page(url)
 	
