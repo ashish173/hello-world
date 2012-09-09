@@ -8,7 +8,7 @@ def get_page(url):
 	content = f.read()   # reading the source code of webpage.
 	return content
 	
-def links(content):
+def e_links(content):   #searches for emials in the page
 	match = r'[\w.]+@[\w.]+'
 	list_link = re.findall(match , content)
 	print list_link
@@ -19,7 +19,7 @@ def main():
 	# removing junk....
 	url = raw_input("enter the url")
 	content =  get_page(url)
-	links(content)
+	e_links(content)
 
 if __name__ == "__main__":
 	main()
